@@ -1,13 +1,13 @@
 /* General styles */
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     background-color: #f0f0f0;
 }
 
@@ -106,7 +106,6 @@ header {
     background: linear-gradient(135deg, #ff4500 0%, #ff6347 100%);
     transform: translateY(-5px);
 }
-
 /* Navigation */
 nav {
     display: flex;
@@ -233,7 +232,25 @@ h2::after {
 }
 
 /* Contact Form */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.contact-details {
+    flex: 1;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
 form {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,8 +258,6 @@ form {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
     transition: box-shadow 0.3s;
 }
 
@@ -333,10 +348,16 @@ footer {
         gap: 1.5em;
     }
 
+    .contact-container {
+        flex-direction: column;
+    }
+
     form {
+        width: 85%;
         padding: 1.5em;
     }
 }
+
 
 /* Keshav */
 .service-icon {
@@ -349,7 +370,7 @@ footer {
     border-radius: 20px;
     height: 400px;
 }
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .show-on-desktop {
       display: none;
     }
@@ -359,4 +380,10 @@ footer {
     .hide-on-desktop {
       display: none;
     }
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
   }
