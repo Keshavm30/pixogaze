@@ -13,22 +13,39 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="home"></div>
+    <div class="show-on-desktop hide-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
     <nav width="100%">
-        <div class="show-on-desktop hide-on-mobile">
+        <a href="#home"><img src="logo.png" alt="Pixogaze Logo" height="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#home">Home</a>
-        </div>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#Photography-Portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
+    </div>
+    <div class="hide-on-desktop show-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
+    <link rel="stylesheet" href="mobile-navigation.css">
+    <div class="topnav">
+        <a href="#home" class="active"><img src="logo.png" alt="Pixogaze Logo" height="50px"></a>
+        <div id="myLinks">
+        <a href="#about" onclick="mobile_navigation_toggle()">About Us</a>
+        <a href="#services" onclick="mobile_navigation_toggle()">Services</a>
+        <a href="#Photography-Portfolio" onclick="mobile_navigation_toggle()">Portfolio</a>
+        <a href="#contact" onclick="mobile_navigation_toggle()">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobile_navigation_toggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
     <header>
         <div class="hero">
             <video autoplay muted loop id="bg-video">
-                <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Background.mp4?alt=media&token=73f6ed87-6501-44c0-94eb-05f7372f2f07" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
             <div class="hero-content">
@@ -41,6 +58,19 @@
     <section id="about" class="section about">
         <h2>About Us</h2>
         <p>We are a professional video production company specializing in creating high-quality visual content for various industries.</p>
+        <div class="service-cards">
+            <div class="card">
+                <img src="About us/Photo/Keshav.jpg" alt="Keshav Mistry" class="service-icon">
+                <h3>Keshav Mistry</h3>
+                <p>DOP, Professional Photographer,<br>and Post-Production Specialist.</p>
+            </div>
+            <div class="card">
+                <img src="About us/Photo/Shubham.png" alt="Shubham Panara" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Shubham Panara</h3>
+                <p>Product photography, business headshots, real estate</p>
+            </div>
+        </div>
     </section>
 
     <section id="services" class="section services">
@@ -78,7 +108,7 @@
         <div class="service-cards">
             <div class="card">
             <video autoplay muted loop id="service-video">
-                <source src="Services Images/Videography/Commercial Videography_270x480.mp4" type="video/mp4">
+                <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FVideography%2FCommercial%20Videography_270x480.mp4?alt=media&token=6d15e418-b26a-4fac-b32f-8e259582aa05" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
                 <!-- <i class="fas fa-film"></i> -->
@@ -88,7 +118,7 @@
 
             <div class="card">
                 <video autoplay muted loop id="service-video">
-                    <source src="Services Images/Videography/Event Videography_270x480.mp4" type="video/mp4">
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FVideography%2FEvent%20Videography_270x480.mp4?alt=media&token=fc36ef47-3205-43fa-9d67-925fc6336451" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
                     <!-- <i class="fas fa-film"></i> -->
@@ -98,7 +128,7 @@
 
             <div class="card">
                 <video autoplay muted loop id="service-video">
-                    <source src="Services Images/Videography/Interviews and Testimonials_270x480.mp4" type="video/mp4">
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FVideography%2FInterviews%20and%20Testimonials_270x480.mp4?alt=media&token=8f9f3e8d-4d28-488d-afdc-b803cd734f1a" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
                     <!-- <i class="fas fa-film"></i> -->
@@ -108,57 +138,142 @@
         </div>
     </section>
 
-    <section id="portfolio" class="section portfolio">
-        <h2>Our Portfolio</h2>
+    <section id="Photography-Portfolio" class="section portfolio">
+        <h2>Photography Portfolio</h2>
         <div class="portfolio-gallery">
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/1.jpg" alt="Portfolio Item 1" width="300px">
+                <img src="Services Images/Portfolio/Photography/1.jpg" alt="Portfolio Item 1" width="300px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/2.jpg" alt="Portfolio Item 2" width="300px">
+                <img src="Services Images/Portfolio/Photography/2.jpg" alt="Portfolio Item 2" width="300px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/3.png" alt="Portfolio Item 3" width="300px">
+                <img src="Services Images/Portfolio/Photography/3.png" alt="Portfolio Item 3" width="300px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/4.png" alt="Portfolio Item 4" width="300px">
+                <img src="Services Images/Portfolio/Photography/4.png" alt="Portfolio Item 4" width="300px">
             </div><br>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/5.jpg" alt="Portfolio Item 5" width="500px">
+                <img src="Services Images/Portfolio/Photography/5.jpg" alt="Portfolio Item 5" width="500px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/6.jpg" alt="Portfolio Item 6" width="500px">
+                <img src="Services Images/Portfolio/Photography/6.jpg" alt="Portfolio Item 6" width="500px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/7.jpg" alt="Portfolio Item 7" width="500px">
+                <img src="Services Images/Portfolio/Photography/7.jpg" alt="Portfolio Item 7" width="500px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/8.jpg" alt="Portfolio Item 8" width="500px">
+                <img src="Services Images/Portfolio/Photography/8.jpg" alt="Portfolio Item 8" width="500px">
             </div>
             <div class="portfolio-item">
-                <img src="Services Images/Portfolio/9.jpg" alt="Portfolio Item 9" width="750px">
+                <img src="Services Images/Portfolio/Photography/9.jpg" alt="Portfolio Item 9" width="750px">
             </div>
             <!-- <div class="portfolio-item">
-                <img src="Services Images/Portfolio/1.jpg" alt="Portfolio Item 3">
+                <img src="Services Images/Portfolio/Photography/1.jpg" alt="Portfolio Item 3">
             </div> -->
+        </div>
+    </section>
+
+    <section id="Videography-Portfolio" class="section portfolio">
+        <h2>Videography Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FPortfolio%2FVideography%2F1.mp4?alt=media&token=a7b5f44e-ce2b-4158-a743-3f3f2291b7f8" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div class="portfolio-item">
+            <div class="show-on-desktop hide-on-mobile">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FPortfolio%2FVideography%2F2.mp4?alt=media&token=99184650-13b6-4fe1-ad84-c7d82d3734b9" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+                <div class="show-on-mobile hide-on-desktop">
+                    <video autoplay muted loop id="service-video" controls style="border-radius: 15px;width: 250px; height: 140.63px;">
+                        <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FPortfolio%2FVideography%2F2.mp4?alt=media&token=99184650-13b6-4fe1-ad84-c7d82d3734b9" type="video/mp4"controlsList="nodownload">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Services%20Images%2FPortfolio%2FVideography%2F3.mp4?alt=media&token=6f3762b3-1615-4579-9044-d5b059e58d7d" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
         </div>
     </section>
 
     <section id="contact" class="section contact">
         <h2>Contact Pixogaze</h2>
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+                <img src="logo-Full-Black.png" alt="" width="50%">
+                <!-- <p>1234 Street Name</p>
+                <p>City, State, Zip</p> -->
+                <p>Email: contact@pixogaze.in</p>
+                <p>Phone: +91 98920 76829</p>
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+            <form id="contactForm">
+                <h3>Contact Form</h3>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="Phone">Your Phone</label>
+                <input type="Phone" id="Phone" name="Phone" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    const data = {};
+                    formData.forEach((value, key) => {
+                        data[key] = value;
+                    });
+        
+                    fetch('https://script.google.com/macros/s/AKfycbz4NZQwNNKSa8gSURWxZ5VKYQgmbrMbQKFO0eG1gh6yja6dUBV7BoJcjHrWFiKmwOWZ/exec', { // Replace with your web app URL
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: new URLSearchParams(data)
+                    }).then(response => {
+                        if (response.ok) {
+                            // alert('Message sent successfully!');
+                        } else {
+                            // alert('There was an error sending your message.');
+                        }
+                    }).catch(error => {
+                        alert('Error: ' + error.message);
+                    });
+                });
+            </script>
+        </div>
     </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Z8r+eT5Rn32lD3Ow8UOt5GC3fWZfPd3JE4KPCt8cfFaN8g/++axx9eAz9ndn9R8gOz4p9pemN8PwIqMVQf8V8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <footer>
         <p>&copy; 2024 Pixogaze. All rights reserved.</p>
+        <div class="footer">
+            <p>Follow Us On:</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/pixogaze" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
     </footer>
 
     <script src="script.js"></script>
