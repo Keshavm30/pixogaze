@@ -44,10 +44,21 @@
     </div>
     <header>
         <div class="hero">
+            
+            <div class="show-on-desktop hide-on-mobile">
             <video autoplay muted loop id="bg-video">
                 <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Background.mp4?alt=media&token=44ac1294-e1b8-4a34-8c0c-ad354d1a8c20" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
+            </div>
+
+            <div class="hide-on-desktop show-on-mobile">
+                <video autoplay muted loop id="bg-video">
+                    <source src="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Background_Mobile.mp4?alt=media&token=eac98b9d-95b3-452c-b5d5-309ed65ad485" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                </div>
+
             <div class="hero-content">
                 <img src="logo.png" alt="" width="50%">
                 <p>Your partner in visual storytelling</p>
