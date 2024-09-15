@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Logo%20%7C%20OG%2Flogo_White.png?alt=media&token=b8f5dc7d-f1f8-4f36-b301-a4772efa2aca">
+
+    <meta property="og:title" content="Pixogaze - Video Company" />
+    <meta property="og:description" content="Your partner in visual storytelling." />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Logo%20%7C%20OG%2Flogo_Black.png?alt=media&token=80877a79-da90-4ea1-941d-52aa512f433a" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixogaze - Video Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="home"></div>
+    <div class="show-on-desktop hide-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
+    <nav width="100%">
+        <a href="#home"><img src="Img/Logo/logo.png" alt="Pixogaze Logo" height="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#Photography-Portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#pricing">Pricing</a>
+    </nav>
+    </div>
+    <div class="hide-on-desktop show-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
+    <link rel="stylesheet" href="mobile-navigation.css">
+    <div class="topnav">
+        <a href="#home" class="active"><img src="Img/Logo/logo.png" alt="Pixogaze Logo" height="50px"></a>
+        <div id="myLinks">
+        <a href="#about" onclick="mobile_navigation_toggle()">About Us</a>
+        <a href="#services" onclick="mobile_navigation_toggle()">Services</a>
+        <a href="#Photography-Portfolio" onclick="mobile_navigation_toggle()">Portfolio</a>
+        <a href="#contact" onclick="mobile_navigation_toggle()">Contact</a>
+        <a href="#pricing" onclick="mobile_navigation_toggle()">Pricing</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobile_navigation_toggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <header>
+        <div class="hero">
+            
+            <div class="show-on-desktop hide-on-mobile">
+            <video autoplay muted loop id="bg-video">
+                <source src="Img/Background/Background_480x270.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            </div>
+
+            <div class="hide-on-desktop show-on-mobile">
+                <video autoplay muted loop id="bg-video">
+                    <source src="Img/Background/Background_Mobile_270x480.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                </div>
+
+            <div class="hero-content">
+                <img src="Img/Logo/logo.png" alt="" width="50%">
+                <p>Your partner in visual storytelling</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <!-- <p>We are a professional video production company specializing in creating high-quality visual content for various industries.</p> -->
+
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br></div>
+                <img src="Img/Logo/logo-Full-Black.png" alt="Pixogaze Logo" width="50%">
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br></div>
+            </div>
+            <div class="contact-details">
+                <p>At Pixogaze, we are dedicated to capturing life's most precious moments through the art of photography and videography. Our mission is to provide high-quality production services that are both stunning and affordable. Whether it's a wedding, corporate event, or a personal project, we bring a creative and professional touch to every shoot, ensuring that your memories are beautifully preserved for years to come.</p>
+                <p>We pride ourselves on our attention to detail and our commitment to excellence. Our team of skilled photographers and videographers use the latest equipment and techniques to deliver exceptional results. From pre-production planning to post-production editing, we handle every aspect of your project with care and precision, allowing you to relax and enjoy the moment.</p>
+                <p>At Pixogaze, we believe that high-quality visual storytelling should be accessible to everyone. That's why we offer a range of customizable packages to fit any budget without compromising on quality. Our goal is to exceed your expectations and provide you with a final product that you will cherish forever.</p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+<section>
+    <center>
+        <h2>Our Team</h2>
+    </center>
+        <div class="service-cards">
+            <div class="card">
+                <img src="About us/Photo/Keshav.jpg" alt="Keshav Mistry" class="service-icon">
+                <h3>Keshav Mistry</h3>
+                <p>DOP, Professional Photographer,<br>and Post-Production Specialist.</p>
+            </div>
+            <div class="card">
+                <img src="About us/Photo/Shubham.png" alt="Shubham Panara" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Shubham Panara</h3>
+                <p>Public Relations Consultant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <h2>Photography Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="Img/Services Images/Photography/Portrait Photography.png" alt="Portrait Photography" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Portrait Photography</h3>
+                <p>Individual, family, and group portraits.</p>
+            </div>
+            <div class="card">
+                <div class="show-on-desktop hide-on-mobile">
+                <img src="Img/Services Images/Photography/Event Photography.JPG" alt="Event Photography" class="service-icon">
+                </div>
+
+                <div class="show-on-mobile hide-on-desktop">
+                <img src="Img/Services Images/Photography/Event Photography.JPG" alt="Event Photography" style="border-radius: 25px;width: 250px;">
+                </div>
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Event Photography</h3>
+                <p>Weddings, parties, corporate events, etc.</p>
+            </div>
+            <div class="card">
+                <img src="Img/Services Images/Photography/Commercial Photography.png" alt="Commercial Photography" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Commercial Photography</h3>
+                <p>Product photography, business headshots, real estate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services">
+        <h2>Videography Services</h2>
+        <div class="service-cards">
+            <div class="card">
+            <video autoplay muted loop id="service-video">
+                <source src="Img/Services Images/Videography/Commercial Videography_270x480.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Commercial Videography</h3>
+                <p>Promotional videos, advertisements, corporate videos.</p>
+            </div>
+
+            <div class="card">
+                <video autoplay muted loop id="service-video">
+                    <source src="Img/Services Images/Videography/Event Videography_270x480.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                    <!-- <i class="fas fa-film"></i> -->
+                    <h3>Event Videography</h3>
+                    <p>Filming weddings, conferences, performances, etc.</p>
+            </div>
+
+            <div class="card">
+                <video autoplay muted loop id="service-video">
+                    <source src="Img/Services Images/Videography/Interviews and Testimonials_270x480.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                    <!-- <i class="fas fa-film"></i> -->
+                    <h3>Interviews and Testimonials:</h3>
+                    <p>Recording interviews and client testimonials.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services">
+        <h2>Additional Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="Img/Services Images/Additional Services/Video.png" alt="Portrait Photography" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Video Editing</h3>
+                <p>Post-production services to edit and enhance footage.</p>
+            </div>
+            <div class="card">
+                <img src="Img/Services Images/Additional Services/Photo.png" alt="Commercial Photography" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Photo Retouching</h3>
+                <p>Enhancing and editing photos for quality and aesthetics.</p>
+            </div>
+            <div class="card">
+                <img src="Img/Services Images/Additional Services/Live.png" alt="Commercial Photography" class="service-icon">
+                <!-- <i class="fas fa-film"></i> -->
+                <h3>Live Streaming</h3>
+                <p>Broadcasting events live over the internet.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Photography-Portfolio" class="section portfolio">
+        <h2>Photography Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/10.jpg" alt="Portfolio Item 1" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/11.jpg" alt="Portfolio Item 1" width="750px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/12.jpg" alt="Portfolio Item 1" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/13.jpg" alt="Portfolio Item 1" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/14.jpg" alt="Portfolio Item 1" width="750px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/15.jpg" alt="Portfolio Item 1" width="300px"></center>
+            </div> <br>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/1.jpg" alt="Portfolio Item 1" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/2.jpg" alt="Portfolio Item 2" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/3.png" alt="Portfolio Item 3" width="300px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/4.png" alt="Portfolio Item 4" width="300px"></center>
+            </div><br>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/5.jpg" alt="Portfolio Item 5" width="500px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/6.jpg" alt="Portfolio Item 6" width="500px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/7.jpg" alt="Portfolio Item 7" width="500px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/8.jpg" alt="Portfolio Item 8" width="500px"></center>
+            </div>
+            <div class="portfolio-item">
+                <center> <img src="Img/Services Images/Portfolio/Photography/9.jpg" alt="Portfolio Item 9" width="750px"></center>
+            </div>
+            <!-- <div class="portfolio-item">
+                <img src="Img/Services Images/Portfolio/Photography/1.jpg" alt="Portfolio Item 3">
+            </div> -->
+        </div>
+    </section>
+
+    <section id="Videography-Portfolio" class="section portfolio">
+        <h2>Videography Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="Img/Services Images/Portfolio/Videography/1.mp4" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div class="portfolio-item">
+            <div class="show-on-desktop hide-on-mobile">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="Img/Services Images/Portfolio/Videography/2.mp4" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+                <div class="show-on-mobile hide-on-desktop">
+                    <video autoplay muted loop id="service-video" controls style="border-radius: 15px;width: 250px; height: 140.63px;">
+                        <source src="Img/Services Images/Portfolio/Videography/2.mp4" type="video/mp4"controlsList="nodownload">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <video autoplay muted loop id="service-video" controls>
+                    <source src="Img/Services Images/Portfolio/Videography/3.mp4" type="video/mp4"controlsList="nodownload">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+        <h2>Our Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Raw Video<br>Capture</h3>
+                <p class="price">₹1,000/hr</p>
+                <ul>
+                    <li>HD video recording</li>
+                    <li>Professional camera gear</li>
+                    <li>Basic stabilization <br> & lighting setup</li>
+                </ul>
+                <!-- <a href="https://wa.me/9892076829?text=Hello Pixogaze,I would like to select the Basic Editing Pricing plan. Could you please confirm the details and next steps?" class="btn" target="_blank">Choose Plan</a> -->
+            </div>
+            <div class="pricing-card">
+                <h3>Basic Editing</h3>
+                <p class="price">300/min</p>
+                <ul>
+                    <li>Basic trimming & cutting</li>
+                    <li>Color correction</li>
+                    <li>Audio balancing</li>
+                    <li>Simple transitions<br>& text overlays</li>
+                </ul>
+                <!-- <a href="https://wa.me/9892076829?text=Hello Pixogaze,I would like to select the Standard Editing Pricing plan. Could you please confirm the details and next steps?" class="btn" target="_blank">Choose Plan <span class="ribbon">Hot</span></a> -->
+            </div>
+            <div class="pricing-card">
+                <h3>Advanced Editing</h3>
+                <p class="price">₹950/min</p>
+                <ul>
+                    <li>Comprehensive trimming<br>& cutting</li>
+                    <li>Advanced color grading</li>
+                    <li>Professional sound design<br>& audio enhancement</li>
+                    <li>Custom transitions, motion<br>graphics & animations</li>
+                </ul>
+                <!-- <a href="https://wa.me/9892076829?text=Hello Pixogaze,I would like to select the Premium Editing Pricing plan. Could you please confirm the details and next steps?" class="btn" target="_blank">Choose Plan</a> -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section contact">
+        <h2>Contact Pixogaze</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+                <img src="Img/Logo/logo-Full-Black.png" alt="Pixogaze Logo" width="50%">
+                <!-- <p>1234 Street Name</p>
+                <p>City, State, Zip</p> -->
+                <p>Email: pixogaze@gmail.com</p>
+                <p>Phone: +91 98920 76829</p>
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+            <form id="contactForm">
+                <h3>Contact Form</h3>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="Phone">Your Phone</label>
+                <input type="Phone" id="Phone" name="Phone" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    const data = {};
+                    formData.forEach((value, key) => {
+                        data[key] = value;
+                    });
+        
+                    fetch('https://script.google.com/macros/s/AKfycbz4NZQwNNKSa8gSURWxZ5VKYQgmbrMbQKFO0eG1gh6yja6dUBV7BoJcjHrWFiKmwOWZ/exec', { // Replace with your web app URL
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: new URLSearchParams(data)
+                    }).then(response => {
+                        if (response.ok) {
+                            // alert('Message sent successfully!');
+                        } else {
+                            // alert('There was an error sending your message.');
+                        }
+                    }).catch(error => {
+                        alert('Error: ' + error.message);
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Z8r+eT5Rn32lD3Ow8UOt5GC3fWZfPd3JE4KPCt8cfFaN8g/++axx9eAz9ndn9R8gOz4p9pemN8PwIqMVQf8V8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <footer>
+        <p>&copy; 2024 Pixogaze. All rights reserved.</p>
+        <div class="footer">
+            <p>Follow Us On:</p>
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="https://www.youtube.com/@Pixogaze" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/pixogaze" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+          </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
