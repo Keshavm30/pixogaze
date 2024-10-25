@@ -2,6 +2,9 @@
 html {
     scroll-behavior: smooth;
 }
+.section {
+    background-color: #f9f9f9;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -525,4 +528,48 @@ footer {
     transform: rotate(20deg);
     background-color: #ff9800;
     color: white;
+}
+
+
+
+
+
+
+.clients {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.client-logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.client-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
