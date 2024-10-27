@@ -540,11 +540,6 @@ footer {
     text-align: center;
 }
 
-.clients h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
 .client-logos {
     display: flex;
     justify-content: center;
@@ -569,7 +564,51 @@ footer {
     height: auto;
 }
 
+.client-logo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.client-logo:hover img {
+    transform: scale(1.1);
+}
+
 .client-logo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Change to a neutral color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 0 0 50% 50%;
+    transform: translateY(100%);
+}
+
+.client-logo:hover .instagram-card {
+    opacity: 1;
+    transform: translateY(0);
 }
