@@ -222,6 +222,12 @@ h2::after {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 480px) {
+    .portfolio-item img {
+        width: 500px; /* Make the image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}
 
 .portfolio-item img {
     max-width: 100%;
