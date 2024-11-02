@@ -216,6 +216,7 @@ h2::after {
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover;
 }
 
 .portfolio-item:hover {
