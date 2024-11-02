@@ -81,6 +81,91 @@
             </div>
         </div>
     </header>
+    <!-- loader -->
+     <!-- Loader HTML (Add this at the top of your body content) -->
+<div id="loader-container">
+    <img src="Img/Logo/logo_White.png" alt="Pixogaze Logo" id="logo">
+    <div class="loader-bar"></div>
+</div>
+
+<style>
+    /* Full-screen loader styling */
+    #loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1a1a1a; /* Background color */
+        z-index: 1000; /* Ensure loader is on top */
+    }
+
+    /* Static logo styling */
+    #logo {
+        width: 150px; /* Adjust size as needed */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Loader bar styling */
+    .loader-bar {
+        width: 80px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Inner black loading bar animation */
+    .loader-bar::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        background-color: #ff6b6b; /* Black loader color */
+        animation: slide 1s infinite;
+    }
+
+    /* Slide animation */
+    @keyframes slide {
+        0% {
+            left: -40%;
+        }
+        50% {
+            left: 100%;
+        }
+        100% {
+            left: -40%;
+        }
+    }
+
+    /* Fade-out transition for hiding loader */
+    .hide-loader {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+</style>
+
+<script>
+    // JavaScript to hide loader after 3 seconds
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loaderContainer = document.getElementById('loader-container');
+            loaderContainer.classList.add('hide-loader'); // Fade out the loader
+
+            // Remove loader from the DOM after fade-out
+            setTimeout(() => {
+                loaderContainer.style.display = 'none';
+            }, 500); // Matches CSS transition duration
+        }, 3000); // Display loader for 3 seconds
+    });
+</script>
+<!-- /loader -->
     <section id="about" class="section about">
         <h2>About Us</h2>
         <!-- <p>We are a professional video production company specializing in creating high-quality visual content for various industries.</p> -->
