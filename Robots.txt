@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /wp-admin/
+
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://pixogaze.in/sitemap.xml
+ 
