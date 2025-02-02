@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon"
+        href="https://firebasestorage.googleapis.com/v0/b/pixogaze-49e2c.appspot.com/o/Logo%20%7C%20OG%2Flogo_White.png?alt=media&token=b8f5dc7d-f1f8-4f36-b301-a4772efa2aca">
+
+    <meta property="og:title" content="Pixogaze - Video Production Company" />
+    <meta property="og:description" content="Your partner in visual storytelling." />
+    <meta property="og:image" itemprop="image" content="https://pixogaze.in/Orders/folder.png" />
+    <meta name="description"
+        content="Capturing moments with precision and passion. Explore our high-quality photography and videography services to see your story come to life.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms And Conditions - Pixogaze</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPGEKZRYF9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EPGEKZRYF9');
+    </script>
+
+</head>
+
+<body>
+    <div id="home"></div>
+    <div class="show-on-desktop hide-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
+        <nav width="100%">
+            <a href="https://pixogaze.in/#home"><img src="../../Img/Logo/logo.png" alt="Pixogaze Logo"
+                    height="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://pixogaze.in/#home">Home</a>
+            <a href="https://pixogaze.in/#about">About Us</a>
+            <a href="https://pixogaze.in/#services">Services</a>
+            <a href="https://pixogaze.in/#Photography-Portfolio">Portfolio</a>
+            <!-- <a href="https://pixogaze.in/#pricing">Pricing</a> -->
+            <a href="https://pixogaze.in/#contact">Contact</a>
+        </nav>
+    </div>
+    <div class="hide-on-desktop show-on-mobile" style="position: sticky; top: 0; z-index: 1000;">
+        <link rel="stylesheet" href="../../mobile-navigation.css">
+        <div class="topnav">
+            <a href="https://pixogaze.in/#home" class="active"><img src="../../Img/Logo/logo.png" alt="Pixogaze Logo"
+                    height="50px"></a>
+            <div id="myLinks">
+                <a href="https://pixogaze.in/#about" onclick="mobile_navigation_toggle()">About Us</a>
+                <a href="https://pixogaze.in/#services" onclick="mobile_navigation_toggle()">Services</a>
+                <a href="https://pixogaze.in/#Photography-Portfolio" onclick="mobile_navigation_toggle()">Portfolio</a>
+                <!-- <a href="https://pixogaze.in/#pricing" onclick="mobile_navigation_toggle()">Pricing</a> -->
+                <a href="https://pixogaze.in/#contact" onclick="mobile_navigation_toggle()">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobile_navigation_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <section id="loader">
+        <!-- loader -->
+        <!-- Loader HTML (Add this at the top of your body content) -->
+        <div id="loader-container">
+            <img src="../../Img/Logo/logo_White.png" alt="Pixogaze Logo" id="logo">
+            <div class="loader-bar"></div>
+        </div>
+
+        <style>
+            /* Full-screen loader styling */
+            #loader-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #1a1a1a;
+                /* Background color */
+                z-index: 1000;
+                /* Ensure loader is on top */
+            }
+
+            /* Static logo styling */
+            #logo {
+                width: 150px;
+                /* Adjust size as needed */
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            /* Loader bar styling */
+            .loader-bar {
+                width: 80px;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 4px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            /* Inner black loading bar animation */
+            .loader-bar::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 40%;
+                background-color: #fe4d15;
+                /* Black loader color */
+                animation: slide 1s infinite;
+            }
+
+            /* Slide animation */
+            @keyframes slide {
+                0% {
+                    left: -40%;
+                }
+
+                50% {
+                    left: 100%;
+                }
+
+                100% {
+                    left: -40%;
+                }
+            }
+
+            /* Fade-out transition for hiding loader */
+            .hide-loader {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+        </style>
+
+        <script>
+            // JavaScript to hide loader after 3 seconds
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const loaderContainer = document.getElementById('loader-container');
+                    loaderContainer.classList.add('hide-loader'); // Fade out the loader
+
+                    // Remove loader from the DOM after fade-out
+                    setTimeout(() => {
+                        loaderContainer.style.display = 'none';
+                    }, 500); // Matches CSS transition duration
+                }, 500); // Display loader for 3 seconds
+            });
+        </script>
+        <!-- /loader -->
+    </section>
+
+    <div class="show-on-desktop hide-on-mobile">
+        <br><br>
+    </div>
+    <div class="show-on-mobile hide-on-desktop">
+        <br>
+    </div>
+
+    <small class="back-link">
+        <span><span><a href="https://www.pixogaze.in/">Home</a></span> »
+            <span><strong>Terms and Conditions</strong></span></span></small>
+
+    <section id="about" class="Terms">
+        <center>
+            <h2>Pixogaze Photo & Video Release</h2><br>
+        </center>
+        <b>
+            <h1 class="back-link">Terms and Conditions</h1>
+        </b><br><br>
+        <div class="elementor-widget-container">
+
+
+            <p>
+                <strong>1. Introduction</strong>
+                These Terms and Conditions ("Agreement") govern the usage rights and obligations for individuals who
+                participate in photoshoots and video shoots conducted by Pixogaze ("Company"). By signing the Pixogaze
+                Photo Release Form, you agree to these terms.
+            </p>
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>2. Grant of Rights</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>By participating in the shoot, you grant Pixogaze unrestricted rights to use, edit, publish,
+                    distribute, and display the captured media.</li>
+                <li>The content may be used for promotional purposes, including but not limited to social media,
+                    website, advertisements, printed materials, and digital marketing.</li>
+                <li>Pixogaze retains perpetual, worldwide, non-exclusive rights to the media.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>3. Usage and Branding</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>All photos and videos will contain the Pixogaze logo and watermark.</li>
+                <li>You may share the media for personal use but must not remove or alter Pixogaze branding.</li>
+                <li>Commercial use of the media by you or any third party requires prior written consent from Pixogaze.
+                </li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>4. Collaboration on Social Media</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>If Pixogaze uploads the media on Instagram or other social platforms, you can request to be tagged
+                    or included as a collaborator.</li>
+                <li>Pixogaze is not obligated to accept collaboration requests and may use its discretion.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>5. No Charges and No Compensation</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>Pixogaze does not charge individuals for photography or videography services covered under this
+                    release.</li>
+                <li>You acknowledge that no monetary compensation will be provided for the use of the media.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>6. Editing and Creative Control</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>Pixogaze has full creative control over editing, retouching, and presentation of the media.</li>
+                <li>Requests for modifications or raw media files will be considered at the discretion of Pixogaze.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>7. Privacy and Confidentiality</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>Pixogaze will not sell or distribute personal information related to participants.</li>
+                <li>If you wish to request removal of specific media from public platforms, you must provide a valid
+                    reason, and Pixogaze will review the request.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>8. Liability Release</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>You acknowledge that participation in the photoshoot is voluntary and at your own risk.</li>
+                <li>Pixogaze and its affiliates are not responsible for any personal injuries, property damage, or
+                    financial loss related to the shoot.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>9. Entry Ticket Responsibility</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>If the photoshoot takes place at a location that requires an entry ticket or admission fee, the
+                    participant is responsible for covering their own entry costs.</li>
+                <li>Pixogaze will not be liable for any such expenses incurred.</li>
+            </ul>
+            </p>
+
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>10. Dispute Resolution</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>Any disputes arising from this Agreement will be resolved amicably through negotiation.</li>
+                <li>If unresolved, disputes will be subject to the jurisdiction of the courts in Mumbai, India.</li>
+            </ul>
+            </p>
+
+
+
+
+            <p class="tNc-sutbtitles">
+                <span style="text-decoration: underline;">
+                    <strong>11. Amendments</strong>
+                </span>
+            </p>
+            <p>
+            <ul>
+                <li>Pixogaze reserves the right to update these terms at any time without prior notice.</li>
+                <li>The latest version of this Agreement will be available at www.pixogaze.in/release/T&C.</li>
+            </ul>
+            </p>
+            <p>By participating in a Pixogaze shoot, you confirm that you have read, understood, and agreed to these
+                terms.</p>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="contact" class="section contact">
+        <h2>Contact Pixogaze</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+                <img src="../../Img/Logo/logo-Full-Black.png" alt="Pixogaze Logo" width="50%">
+                <!-- <p>1234 Street Name</p>
+                <p>City, State, Zip</p> -->
+                <p>Email: pixogaze@gmail.com</p>
+                <p>Phone: +91 95945 18106</p>
+                <div class="show-on-desktop hide-on-mobile"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+            <form method="post" name="google-sheet">
+                <h3>Contact Form</h3>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="Phone">Your Phone</label>
+                <input type="Phone" id="Phone" name="Phone" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxpLr1SIs7y1rqcCokzDKZAdMn1nadT-XQ2f5r82Rxer-0ENYFdSgOxhsCoY119Jv24/exec'
+                const form = document.forms['google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Z8r+eT5Rn32lD3Ow8UOt5GC3fWZfPd3JE4KPCt8cfFaN8g/++axx9eAz9ndn9R8gOz4p9pemN8PwIqMVQf8V8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <footer>
+        <p>&copy; 2024 Pixogaze. All rights reserved.</p>
+        <!-- <p><a href="privacy policy.html" style="color: white;" target="_blank">Privacy Policy</a></p>
+        <p><a href="Terms and Conditions.html" style="color: white;" target="_blank">Terms and Conditions</a></p>
+        <p><a href="Cancellation and Refund Policy.html" style="color: white;" target="_blank">Cancellation and Refund Policy</a></p>
+        <p><a href="Shipping and Delivery Policy.html" style="color: white;" target="_blank">Shipping and Delivery Policy</a></p> -->
+
+        <div class="footer">
+            <p>Follow Us On:</p>
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="https://www.youtube.com/@Pixogaze" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/pixogaze" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
