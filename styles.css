@@ -642,7 +642,7 @@ footer {
     align-items: center;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff; /* Change this to your desired color */
+    background-color: #ff4500; /* Change this to your desired color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -653,10 +653,11 @@ footer {
 
 .back-btn i {
     margin-right: 8px; /* Space between icon and text */
+    
 }
 
 .back-btn:hover {
-    background-color: #0056b3; /* Change this to a darker shade for hover effect */
+    background-color: #ff6347; /* Change this to a darker shade for hover effect */
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

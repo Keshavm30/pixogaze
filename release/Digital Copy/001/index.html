@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Link Form</title>
+    <style>
+        #form-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="form-container">
+        <form id="linkForm">
+            <label for="linkInput">Enter Link:</label>
+            <input type="url" id="linkInput" name="linkInput" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="link-container">
+        <!-- The embedded link will be shown here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const linkForm = document.getElementById("linkForm");
+            const linkInput = document.getElementById("linkInput");
+            const formContainer = document.getElementById("form-container");
+            const linkContainer = document.getElementById("link-container");
+
+            linkForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                const link = linkInput.value;
+
+                // Generate the new HTML content with the embedded link
+                const newHTML = `<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Embed Link Form</title>
+                </head>
+                <body>
+                    <div id="link-container">
+                        <iframe src="${link}" width="100%" height="500px"></iframe>
+                    </div>
+                </body>
+                </html>`;
+
+                // Create a Blob with the new HTML content
+                const blob = new Blob([newHTML], { type: 'text/html' });
+
+                // Create a link to download the new HTML file
+                const downloadLink = document.createElement("a");
+                downloadLink.href = URL.createObjectURL(blob);
+                downloadLink.download = "embedded_link_page.html";
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+
+                // Show the embedded link
+                formContainer.style.display = "none";
+                linkContainer.innerHTML = `<iframe src="${link}" width="100%" height="500px"></iframe>`;
+            });
+        });
+    </script>
+</body>
+</html>
