@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 .section {
     background-color: #f9f9f9;
 }
@@ -76,6 +77,7 @@ header {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -87,6 +89,7 @@ header {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -109,6 +112,7 @@ header {
     background: linear-gradient(135deg, #ff4500 0%, #ff6347 100%);
     transform: translateY(-5px);
 }
+
 /* Navigation */
 nav {
     display: flex;
@@ -223,10 +227,13 @@ h2::after {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 @media (max-width: 480px) {
     .portfolio-item img {
-        width: 500px; /* Make the image take the full width of its container */
-        height: auto; /* Maintain the aspect ratio */
+        width: 500px;
+        /* Make the image take the full width of its container */
+        height: auto;
+        /* Maintain the aspect ratio */
     }
 }
 
@@ -381,23 +388,25 @@ footer {
     border-radius: 20px;
     height: 400px;
 }
-  @media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
     .show-on-desktop {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media screen and (min-width: 481px) {
+}
+
+@media screen and (min-width: 481px) {
     .hide-on-desktop {
-      display: none;
+        display: none;
     }
-  }
-  .footer a {
+}
+
+.footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
     font-size: 20px;
-  }
+}
 
 
 
@@ -606,7 +615,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Change to a neutral color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Change to a neutral color */
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -625,7 +635,8 @@ footer {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #000000; /* Change this to your desired color */
+    background-color: #000000;
+    /* Change this to your desired color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -633,7 +644,8 @@ footer {
 }
 
 .view-more-btn:hover {
-    background-color: #ff6347; /* Change this to a darker shade for hover effect */
+    background-color: #ff6347;
+    /* Change this to a darker shade for hover effect */
     transform: translateY(-3px);
 }
 
@@ -642,7 +654,8 @@ footer {
     align-items: center;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #ff4500; /* Change this to your desired color */
+    background-color: #ff4500;
+    /* Change this to your desired color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -652,12 +665,14 @@ footer {
 }
 
 .back-btn i {
-    margin-right: 8px; /* Space between icon and text */
-    
+    margin-right: 8px;
+    /* Space between icon and text */
+
 }
 
 .back-btn:hover {
-    background-color: #ff6347; /* Change this to a darker shade for hover effect */
+    background-color: #ff6347;
+    /* Change this to a darker shade for hover effect */
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

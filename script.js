@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
         alert("Message sent!");
     });
@@ -21,8 +21,18 @@ document.addEventListener("DOMContentLoaded", function() {
 function mobile_navigation_toggle() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
-      x.style.display = "none";
+        x.style.display = "none";
     } else {
-      x.style.display = "block";
+        x.style.display = "block";
     }
-  }
+}
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
