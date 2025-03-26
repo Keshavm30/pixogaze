@@ -696,3 +696,100 @@ footer {
     transform: translateY(-1px) scale(1.02);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+/* home catagery */
+@media screen and (max-width: 480px) {
+
+    .category-container {
+        position: relative;
+        width: 90;
+    }
+
+    .category-container-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .category-container-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #1F1B20;
+
+    }
+
+    .category-container:hover .category-container-overlay {
+        opacity: 0.75;
+    }
+
+    .category-container-text {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+
+    .category-container {
+        position: relative;
+        width: 500px;
+    }
+
+    .category-container-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .category-container-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #1F1B20;
+
+    }
+
+    .category-container:hover .category-container-overlay {
+        opacity: 0.75;
+    }
+
+    .category-container-text {
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
